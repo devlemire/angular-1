@@ -44,7 +44,7 @@ In this step, we'll create the skeleton of our HTML. This includes an `index.htm
   </head>
 
   <body>
-  
+    
   </body>
 </html>
 ```
