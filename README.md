@@ -89,3 +89,52 @@ In this step, we'll turn our plain web application into an Angular application. 
 ```
 
 </details>
+
+## Step 3
+
+### Summary
+
+In this step, we'll create the javascript file that creates our Angular application.
+
+### Instructions
+
+* Create a file called `app.js` in `js/`.
+* Open `js/app.js`.
+* Initialize an Angular application called `"friendsList"`.
+* Include `js/app.js` in the `index.html` file.
+  * The order is imperative here. Include `js/app.js` just below the Angular CDN.
+
+### Solution
+
+<details>
+
+<summary> <code> js/app.js </code> </summary>
+
+```js
+angular.module("friendsList", []);
+```
+
+</details>
+
+<details>
+
+<summary> <code> index.html </code> </summary>
+
+```html
+<!DOCTYPE html>
+<html ng-app="friendsList">
+  <head>
+    <title>My first angular app!</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body ng-controller="mainCtrl">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
+    <script src="./js/app.js" />
+  </body>
+</html>
+```
+
+</details>
