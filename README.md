@@ -55,7 +55,7 @@ In this step, we'll create the skeleton of our HTML. This includes an `index.htm
 
 ### Summary
 
-In this step, we'll turn our plain web application into an Angular application. We'll do this by acquiring angular's CDN, specificing our `app`'s name, and our main controller's name.
+In this step, we'll turn our plain web application into an Angular application. We'll do this by acquiring angular's CDN, specifying our application's name, and specifying our main controller's name.
 
 ### Instructions
 
