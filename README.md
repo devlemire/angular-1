@@ -24,7 +24,7 @@ In this step, we'll create the skeleton of our HTML. This includes an `index.htm
   * Be sure to include a `body` tag.
 * Add a `paragraph` element to the html that says 'Woo'.
 * Create a `styles.css` file.
-* Add css that changes the font color of the `paragraph` element to `red`.
+  * Add css that changes the font color of the `paragraph` element to `red`.
 * Link `styles.css` in your `index.html` file.
   * Once you have confirmed your `styles.css` is linked in your `index.html` file, remove the `paragraph` element from `index.html` and the styles from `styles.css`.
 
