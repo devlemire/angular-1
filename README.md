@@ -63,8 +63,8 @@ In this step, we'll turn our plain web application into an Angular application. 
 * Click on the download button and then click on `DOWNLOAD ANGULARJS`.
 * Click on `1.2.x ( legacy )` and then copy the `CDN` link.
 * Open `index.html` and add a `script` tag that links to the Angular CDN just before the closing `body` tag.
-* Add an `ng-app` attribute to the `html` tag. Let's call our Angular application `"friendsList"`.
-* Add an `ng-controller` attribute to the `body` tag. Let's call our Angular controller `"mainCtrl"`.
+* Add a `ng-app` attribute to the `html` tag. Let's call our Angular application `"friendsList"`.
+* Add a `ng-controller` attribute to the `body` tag. Let's call our Angular controller `"mainCtrl"`.
 
 ### Solution
 
