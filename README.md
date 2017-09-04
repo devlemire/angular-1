@@ -101,7 +101,7 @@ In this step, we'll create the javascript file that creates our Angular applicat
 * Create a file called `app.js` in `js/`.
 * Open `js/app.js`.
 * Initialize an Angular application called `"friendsList"`.
-* Include `js/app.js` in the `index.html` file.
+* Open `index.html` and add a `script` tag that links to `js/app.js`.
   * The order is imperative here. Include `js/app.js` just below the Angular CDN.
 
 ### Solution
@@ -133,6 +133,59 @@ angular.module("friendsList", []);
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
     <script src="./js/app.js" />
+  </body>
+</html>
+```
+
+</details>
+
+## Step 4
+
+### Summary
+
+In this step, we'll create the javascript file that creates our main Angular controller.
+
+### Instructions
+
+* Create a filed called `mainCtrl.js` in `js/`.
+* Open `js/mainCtrl.js`.
+* Create an Angular controller called `mainCtrl`.
+* Assign an array of your friends to a scope variable called `friends`.
+* Open `index.html` and add a `script` tag that links to `js/mainCtrl.js`.
+  * The order is imperative here. Include `js/mainCtrl.js` just below the `js/app.js`.
+
+### Solution
+
+<details>
+
+<summary> <code> js/mainCtrl.js </code> </summary>
+
+```js
+angular.module('friendsList').controller('mainCtrl', function($scope){
+  $scope.friends = [ 'Garry', 'Jerry', 'Larry', 'Perry', 'Mary' ];
+});
+```
+
+</details>
+
+<details>
+
+<summary> <code> index.html </code> </summary>
+
+```html
+<!DOCTYPE html>
+<html ng-app="friendsList">
+  <head>
+    <title>My first angular app!</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body ng-controller="mainCtrl">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
+    <script src="./js/app.js" />
+    <script src="./js/mainCtrl.js" />
   </body>
 </html>
 ```
