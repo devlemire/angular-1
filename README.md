@@ -50,3 +50,41 @@ In this step, we'll create the skeleton of our HTML. This includes an `index.htm
 ```
 
 </details>
+
+## Step 2
+
+### Summary
+
+In this step, we'll turn our plain web application into an Angular application. We'll do this by acquiring angular's CDN, specificing our `app`'s name, and our main controller's name.
+
+### Instructions
+
+* Open a browser window and navigate to <a href="https://angularjs.org/">Angular JS</a>
+* Click on the download button and then click on `DOWNLOAD ANGULARJS`.
+* Click on `1.2.x ( legacy )` and then copy the `CDN` link.
+* Open `index.html` and add a `script` tag that links to the Angular CDN just before the closing `body` tag.
+* Add an `ng-app` attribute to the `html` tag. Let's call our Angular application `"friendsList"`.
+
+### Solution
+
+<details>
+
+<summary> <code> index.html </code> </summary>
+
+```html
+<!DOCTYPE html>
+<html ng-app="friendsList">
+  <head>
+    <title>My first angular app!</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body ng-controller="mainCtrl">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
+  </body>
+</html>
+```
+
+</details>
