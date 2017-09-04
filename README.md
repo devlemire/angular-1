@@ -83,7 +83,7 @@ In this step, we'll turn our plain web application into an Angular application. 
 
   <body ng-controller="mainCtrl">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
   </body>
 </html>
 ```
@@ -131,8 +131,8 @@ angular.module("friendsList", []);
 
   <body ng-controller="mainCtrl">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
-    <script src="./js/app.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
 ```
@@ -183,9 +183,54 @@ angular.module('friendsList').controller('mainCtrl', function($scope){
 
   <body ng-controller="mainCtrl">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js" />
-    <script src="./js/app.js" />
-    <script src="./js/mainCtrl.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/mainCtrl.js"></script>
+  </body>
+</html>
+```
+
+</details>
+
+## Step 5
+
+### Summary
+
+In this step, we'll take data from `js/mainCtrl.js`'s scope and output it in `index.html`.
+
+### Instructions
+
+* Open `index.html`.
+* Create a `H1` tag that says `"My Friends"`.
+* Under that `H1` tag use `ng-repeat` to create a list of friends.
+  * The format should be a parent `div` element that has one child `paragraph` element.
+  * The `paragraph` element should display the name of the friend.
+
+### Solution
+
+<details>
+
+<summary> <code> index.html </code> </summary>
+
+```html
+<!DOCTYPE html>
+<html ng-app="friendsList">
+  <head>
+    <title>My first angular app!</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body ng-controller="mainCtrl">
+
+    <h1>My Friends</h1>
+    <div ng-repeat="friend in friends">
+      <p>{{ friend }}</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
   </body>
 </html>
 ```
