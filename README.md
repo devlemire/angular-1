@@ -239,7 +239,8 @@ In this step, we'll take data from `js/mainCtrl.js`'s scope and output it in `in
 
 ## Black Diamond
 
-* Add a function on `mainCtrl`'s scope, called `addFriend`, that can add friend names to the `friends` array on scope.
+* Add a function on `mainCtrl`'s scope that can add friend names to the `friends` array on scope.
+  * Call this function `addFriend`.
 * Add an input field that a user can type a name into in `index.html`.
 * Add a button that a user can click to invoke `addFriend` off of scope.
 
